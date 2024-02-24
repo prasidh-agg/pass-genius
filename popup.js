@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById(
       "generatedPassword"
-    ).innerHTML = `${generatedPassword}`;
+    ).textContent = `${generatedPassword}`;
 
     document
       .getElementById("generatedPassword")
@@ -95,19 +95,19 @@ document.addEventListener("DOMContentLoaded", function () {
     if (includeSpecialChars) {
       charset += specialChars;
     }
+    console.log(charset);
+    console.log(length);
 
     // Calculate the actual length of the charset
     const actualCharsetLength = charset.length;
-
-    // If the actual length is less than the desired length, adjust the length
-    const adjustedLength = Math.min(length, actualCharsetLength);
+    console.log("actual charset length: " + actualCharsetLength);
 
     let password = "";
-    for (let i = 0; i < adjustedLength; i++) {
+    for (let i = 0; i < length; i++) {
       const randomIndex = Math.floor(Math.random() * actualCharsetLength);
       password += charset.charAt(randomIndex);
     }
-    console.log(includeSpecialChars);
+    console.log(password);
     return password;
   }
 });
