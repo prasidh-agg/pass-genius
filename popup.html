@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <label for="passwordLength"
+        >Password Length: <span id="lengthValue">15</span></label
+      >
+      <input type="range" id="passwordLength" min="10" max="30" value="15" />
+
+      <div class="checkbox-row">
+        <label> <input type="checkbox" id="includeLowercase" /> a-z </label>
+      </div>
+
+      <div class="checkbox-row">
+        <label> <input type="checkbox" id="includeUppercase" /> A-Z </label>
+      </div>
+
+      <div class="checkbox-row">
+        <label>
+          <input type="checkbox" id="includeSpecialChars" /> Special
+          Characters</label
+        >
+      </div>
+
+      <div class="checkbox-row">
+        <label> <input type="checkbox" id="includeNumbers" /> 0-9 </label>
+      </div>
+
+      <div class="button-container">
+        <button id="generatePassword" class="btn btn-primary">
+          Generate Password
+        </button>
+      </div>
+
+      <div id="generatedPassword"></div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
