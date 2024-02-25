@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Password Generator",
+  "name": "Pass Genius",
   "version": "1.0",
   "description": "Generate strong passwords on the fly.",
   "permissions": ["activeTab"],
