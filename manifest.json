@@ -3,7 +3,6 @@
   "name": "Pass Genius",
   "version": "1.0",
   "description": "Generate strong passwords on the fly.",
-  "permissions": ["activeTab"],
   "action": {
     "default_icon": {
       "16": "icons/icons8-lock-16.png",
