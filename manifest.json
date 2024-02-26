@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Pass Genius",
-  "version": "1.0",
+  "version": "2.0",
   "description": "Generate strong passwords on the fly.",
   "action": {
     "default_icon": {
